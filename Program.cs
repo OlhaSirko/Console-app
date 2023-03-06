@@ -36,8 +36,7 @@ Console.WriteLine("Length of BC is: " + Convert.ToString(BC));
 Console.WriteLine("Length of AC is: " + Convert.ToString(AC));
 
 //Determine if a triangle is equilateral.
-bool equilateral;
-if (equilateral = Math.Pow(AB, 2) + Math.Pow(AC, 2) == Math.Pow(BC, 2))
+if (Math.Pow(AB, 2) + Math.Pow(AC, 2) == Math.Pow(BC, 2))
 {
     Console.WriteLine("Triangle IS 'Equilateral'");
 }
@@ -47,8 +46,7 @@ else
 }
 
 //Determine if a triangle is isosceles.
-bool isosceles;
-if (isosceles = AB == BC || BC == AC || AC == AB)
+if (AB == BC || BC == AC || AC == AB)
 {
     Console.WriteLine("Triangle IS 'Isosceles'");
 }
@@ -58,9 +56,8 @@ else
 }
 
 //Determine if a triangle is right.
-bool right;
 double delta = 0.1;
-if (right = Math.Pow(BC, 2) - (Math.Pow(AB, 2) + Math.Pow(AC, 2)) <= delta)
+if (Math.Pow(BC, 2) - (Math.Pow(AB, 2) + Math.Pow(AC, 2)) <= delta)
 {
     Console.WriteLine("Triangle IS 'Right'");
 }
